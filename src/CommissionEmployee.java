@@ -45,6 +45,6 @@ public class CommissionEmployee extends Employee {
     @Override
     public String toString(){
         int commisionPercentage = (int) (this.commissionPercentage * 100);
-        return String.format("%s | Status: Commission paid | Base salary: %.2f kr. | Total sales: %.2f kr. | Commission percentage: %d%% | Salary: %.2f kr.", super.toString(),this.baseSalary, this.salesAmount, commisionPercentage, calculateSalary());
+        return String.format("%s | Employee type: Commission based | Base salary: %.2f kr. | Total sales: %.2f kr. | Commission percentage: %d%% | Salary: %.2f kr.", super.toString(),this.baseSalary, this.salesAmount, commisionPercentage, calculateSalary());
     }
 }

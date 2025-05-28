@@ -22,6 +22,6 @@ public class MonthlyEmployee extends Employee{
 
     @Override
     public String toString (){
-        return String.format("%s | Status: Monthly paid | Salary: %.2f kr.", super.toString(), calculateSalary());
+        return String.format("%s | Employee type: Monthly paid | Salary: %.2f kr.", super.toString(), calculateSalary());
     }
 }
