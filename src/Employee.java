@@ -12,6 +12,6 @@ public abstract class Employee {
 
     @Override
     public String toString(){
-        return "Id: " + this.employeeId + ". Name: " + this.employeeName;
+        return "Employee ID: " + this.employeeId + " | Name: " + this.employeeName;
     }
 }

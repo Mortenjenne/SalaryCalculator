@@ -30,4 +30,11 @@ public class HourlyEmployee extends Employee {
         double salary = this.numberOfHours * this.payPrHour;
         return Math.round(salary * 100.0) / 100.0;
     }
+
+    @Override
+    public String toString(){
+        return String.format("%s | Status: Monthly paid | Hours worked: %.2f | Hourly wage: %.2f kr. | Salary: %.2f kr.", super.toString(),this.numberOfHours, this.payPrHour, calculateSalary());
+    }
+
+
 }

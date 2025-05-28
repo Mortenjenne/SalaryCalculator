@@ -19,4 +19,9 @@ public class MonthlyEmployee extends Employee{
     public double calculateSalary() {
         return Math.round(salary * 100.0) / 100.0;
     }
+
+    @Override
+    public String toString (){
+        return String.format("%s | Status: Monthly paid | Salary: %.2f kr.", super.toString(), calculateSalary());
+    }
 }

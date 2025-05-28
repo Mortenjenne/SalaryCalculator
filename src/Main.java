@@ -15,8 +15,8 @@ public class Main {
         employees.add(new CommissionEmployee(6,"Helene Petersen", 20000.0, 30000.0,0.25));
 
         for(Employee employee: employees){
-            String salaryWithTwoDecimals = String.format("%.2f",employee.calculateSalary());
-            System.out.println(employee + ". Salary: " + salaryWithTwoDecimals + " Kr.");
+
+            System.out.println(employee);
         }
     }
 }
