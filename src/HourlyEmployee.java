@@ -35,6 +35,4 @@ public class HourlyEmployee extends Employee {
     public String toString(){
         return String.format("%s | Employee type: Hourly paid | Hours worked: %.2f | Hourly wage: %.2f kr. | Salary: %.2f kr.", super.toString(),this.numberOfHours, this.payPrHour, calculateSalary());
     }
-
-
 }

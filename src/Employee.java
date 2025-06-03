@@ -8,6 +8,14 @@ public abstract class Employee {
         this.employeeName = employeeName;
     }
 
+    public int getEmployeeId(){
+        return this.employeeId;
+    }
+
+    public String getEmployeeName(){
+        return this.employeeName;
+    }
+
     public abstract double calculateSalary();
 
     @Override
